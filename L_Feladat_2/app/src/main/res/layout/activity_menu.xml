@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/textViewTopEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/light_purple"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_purple"
+        android:text="Menü"
+        android:textColor="@color/neon_blue"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonCalculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/blue"
+        android:text="SZÁMOLÓGÉP"
+        android:textColor="@color/black"
+        android:onClick="openCalculator"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewOthers"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:rotation="310"
+            android:text="Egyebek"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@color/neon_green"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonCamera"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/neon_green"
+                android:text="KAMERA"
+                android:textColor="@color/black"
+                android:onClick="openCamera"/>
+
+            <Button
+                android:id="@+id/buttonGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/neon_green"
+                android:text="GALÉRIA"
+                android:textColor="@color/black"
+                android:onClick="openGallery"/>
+
+            <Button
+                android:id="@+id/buttonContacts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/neon_green"
+                android:text="KONTAKTOK"
+                android:textColor="@color/black"
+                android:onClick="openContacts"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewWebpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Webhely:"
+        android:textColor="@color/orange"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextWebpage"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        android:inputType="text"
+        android:text="http://www.uni-pannon.hu/" />
+
+    <Button
+        android:id="@+id/buttonWebpage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/grey"
+        android:text="WEBOLDAL MEGNYITÁSA"
+        android:textColor="@color/black"
+        android:onClick="openWebpage"/>
+
+    <Button
+        android:id="@+id/buttonIdentify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/grey"
+        android:text="AZONOSÍTÁS"
+        android:textColor="@color/black"
+        android:onClick="openIdentification"/>
+
+    <TextView
+        android:id="@+id/textViewNamePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Név és jelszó:"
+        android:textColor="@color/orange"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewLoginData"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+
+
+    <TextView
+        android:id="@+id/textViewLoginData2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/yellow"
+        android:gravity="center"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="@color/black" />
+</LinearLayout>
