@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">L_Feladat_5</string>
+    <string name="title">Gyümölcsök</string>
+    <string name="dialog_message">Törlöd ezt a listaelemet?</string>
+</resources>

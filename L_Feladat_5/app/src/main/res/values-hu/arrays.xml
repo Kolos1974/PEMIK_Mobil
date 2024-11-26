@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="fruits">
+        <item>alma</item>
+        <item>barack</item>
+        <item>cseresznye</item>
+        <item>eper</item>
+        <item>szőlő</item>
+        <item>kiwi</item>
+    </string-array>
+
+</resources>

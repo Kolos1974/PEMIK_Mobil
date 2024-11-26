@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        style="@style/sajat_stilus"/>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/title"/>
+
+    <EditText
+        android:id="@+id/editTextText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text=""
+        android:layout_below="@+id/listView"
+        style="@style/sajat_stilus"/>
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HOZZÁADÁS"
+        android:layout_below="@+id/editTextText"
+        android:onClick="addFruit"/>
+
+    <Button
+        android:id="@+id/buttonRemoveLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UTOLSÓ TÖRLÉSE"
+        android:layout_toRightOf="@+id/buttonAdd"
+        android:layout_alignTop="@+id/buttonAdd"
+        android:onClick="removeLastFruit"/>
+
+    <Button
+        android:id="@+id/buttonRemove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TÖRLÉS"
+        android:layout_toRightOf="@+id/buttonRemoveLast"
+        android:layout_alignTop="@+id/buttonRemoveLast"
+        android:onClick="removeFruit"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/fruits"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
