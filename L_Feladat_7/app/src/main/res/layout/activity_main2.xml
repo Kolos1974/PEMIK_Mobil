@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/black">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/new_rocker"
+        android:gravity="center_horizontal"
+        android:text="Adattárolás"
+        android:textColor="#F44336"
+        android:textSize="30sp" />
+
+    <TextView
+        style="@style/stilus1"
+        android:text="Név:" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        style="@style/stilus2"
+        android:text="" />
+
+    <TextView
+        style="@style/stilus1"
+        android:text="Életkor:" />
+
+    <EditText
+        android:id="@+id/editTextAge"
+        style="@style/stilus2"
+        android:text="" />
+
+    <TextView
+        style="@style/stilus1"
+        android:text="Indítások száma:" />
+
+    <TextView
+        android:id="@+id/textViewStartCount"
+        style="@style/stilus2"
+        android:text="0" />
+
+    <TextView
+        style="@style/stilus1"
+        android:text="Indítások ídeje:" />
+
+    <TextView
+        android:id="@+id/textViewStartDates"
+        style="@style/stilus2"
+        android:text="" />
+
+</LinearLayout>
