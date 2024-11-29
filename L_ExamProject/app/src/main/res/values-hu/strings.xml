@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">L_ExamProject</string>
+    <string name="detail">RÉSZLETEK</string>
+    <string name="save">MENTÉS</string>
+    <string name="title">Cím</string>
+    <string name="description">Leírás</string>
+    <string name="delete">TÖRLÉS</string>
+    <string name="todo">Teendők</string>
+</resources>

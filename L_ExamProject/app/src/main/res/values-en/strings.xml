@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">L_ExamProject</string>
+    <string name="detail">DETAIL</string>
+    <string name="save">SAVE</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="delete">DELETE</string>
+    <string name="todo">ToDo</string>
+</resources>
